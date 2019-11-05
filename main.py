@@ -9,7 +9,7 @@ def metodo_minimos(x,y,tam):
     totaly += y[j]
   for k in range (0, tam):                                                   #somatória x^2
     x_quadrado += x[k]**2
-  for l in range(1, tam):                                                    #somaória x*y
+  for l in range(0, tam):                                                    #somaória x*y
     xy += x[l]*y[l]
   a0 = ((x_quadrado*totaly)-(xy*totalx))/((tam*x_quadrado)-(totalx**2))      #cálculo a0
   a1 = ((tam*xy)-(totalx*totaly))/((tam*x_quadrado)-(totalx**2))             #cálculo a1
